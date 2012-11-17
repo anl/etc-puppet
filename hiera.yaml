@@ -1,0 +1,13 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - defaults
+  - nodes/%{fqdn}
+  - env/%{environment}
+  - global
+
+:yaml:
+# datadir is empty here, so hiera uses its defaults
+# When specifying a datadir, make sure the path of the datadir exists
+  :datadir: '/etc/hiera'
