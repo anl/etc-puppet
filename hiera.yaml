@@ -6,7 +6,7 @@
   - global
   - nodes/%{fqdn}
   - env/%{environment}
-  - global
+  - os/%{operatingsystem}
   - defaults
 
 :gpg:
