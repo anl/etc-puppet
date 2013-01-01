@@ -1,11 +1,16 @@
 ---
 :backends:
   - yaml
+  - gpg
 :hierarchy:
-  - defaults
+  - global
   - nodes/%{fqdn}
   - env/%{environment}
   - global
+  - defaults
+
+:gpg:
+  :datadir: '/etc/hiera-gpg'
 
 :yaml:
 # datadir is empty here, so hiera uses its defaults
